@@ -20,7 +20,7 @@ function checkScreenY(currentY) {
     for(var i = 0; i < screens.length; i++) {
         const screenY = document.querySelector(`#${screens[i]}`).getBoundingClientRect().y;
 
-        if(mainContent.scrollHeight - window.innerHeight == currentY) {
+        if(mainContent.scrollHeight - window.innerHeight <= currentY + 14) {
             document.querySelector(`#${screens[0]}-nav`).classList.add("bright");
             return;
         }
