@@ -9,7 +9,7 @@ window.addEventListener("load", ev => {
 });
 
 function checkScreenY(currentY) {
-    const screens = ["contact", "services", "home"];
+    const screens = ["contact", "services", "about-us", "home"];
     
     for(var i = 0; i < screens.length; i++) {
         const screen = document.querySelector(`#${screens[i]}-nav`);
